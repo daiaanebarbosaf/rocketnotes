@@ -9,6 +9,11 @@ export const Container = styled.div`
   grid-template-areas: 
   "header"
   "content";
+
+  > main {
+    grid-area: content;
+    overflow-y: scroll;
+  }
 `;
 
 export const Links = styled.ul`
@@ -21,4 +26,8 @@ export const Links = styled.ul`
       color: ${({ theme }) => theme.COLORS.WHITE};
     }
   }
+`;
+
+export const Content = styled.div`
+
 `;
